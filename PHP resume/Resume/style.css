@@ -1,0 +1,415 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb( 118, 113, 113);
+}
+
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section{
+    background-color: rgb( 59, 56, 56);
+    height: 680px;
+    display: flex;
+}
+
+.left-section{
+    width: 350px;
+    flex-direction: column;
+    justify-content: center;
+}
+.left-section div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    /*border: solid 1px red;} */
+}
+.profile-div{
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end !important;
+    flex-direction: column;
+    position: relative;
+}
+.profile-div img{
+    height: 125px;
+    border-radius: 50%;
+}
+.profile-div h1{
+    font-size: 20px;
+    margin: 20px auto 0 auto;
+}
+.profile-div h2{
+    font-size: 15px;
+    color: gainsboro;
+    margin: 0 auto 20px auto;
+}
+
+.place-div{
+    height: 150px;
+    flex-direction: row;
+    position: relative;
+}
+.place-div div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.left-pdiv{
+    align-items: flex-start !important;
+}
+.left-pdiv p, .right-pdiv p{
+    margin-left: 30px;
+    font-weight: bold;
+}
+.right-pdiv p{
+    color: gainsboro;
+}
+
+.language-div{
+    height: 85px;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+}
+.language-div p{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+.pl-div{
+    height: 190px;
+    flex-direction: column;
+    position: relative;
+}
+.langs p{
+    color: gainsboro;
+}
+.pl{
+    height: 20px;
+    font-weight: bold;
+}
+.pls{
+    height: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row !important;
+    gap: 5px;
+}
+.pls-icons{
+    flex-direction: column;   
+    width: 50px !important;
+    height: 100%;
+    justify-content: space-evenly !important;
+}
+.pls-icons img{
+    height: 35px;
+}
+.js img{
+    height: 25px !important;
+}
+.pls-langs{
+    flex-direction: column;
+    align-items: flex-start !important;
+    justify-content: space-evenly !important;
+    height: 100%;
+    width: 135px !important;
+}
+.pls-langs p{
+    margin: 10px;
+    font-weight: bold;
+    color: gainsboro;
+}
+
+#profile-divider{
+    width: 280px !important;
+    height: 3px;
+    bottom: -10px;
+}
+#place-divider{
+    width: 280px !important;
+    height: 3px;
+    bottom: 10px;
+}
+#language-divider{
+    width: 280px !important;
+    height: 3px;
+    bottom: 0;
+}
+
+.right-section{
+    background-color: transparent;
+    width: 1050px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.right-section div{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    color: white;
+}
+.top-div{
+    margin-top: 5px;
+    height: 245px;
+    background: url('profile/codes.png');
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: 1100px;
+    filter: brightness(50%);
+    overflow: hidden;
+    width: 1028px !important;
+    border-radius: 3px;
+}
+.center-div{
+    height: 125px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row ;
+    position: relative;
+}
+.center-div .jobs, .school{
+    background-color: rgb( 59, 56, 56);
+}
+.divider{
+    height: 80%;
+    width: 3px !important;
+    border-radius: 5px;
+    position: absolute;
+    background-color: rgb(133, 131, 131);
+}
+.school, .jobs{
+    height: 90%;
+    width: 515px !important;
+}
+.school{
+    border-radius: 3px 0 0 3px;
+    display: flex !important;
+    align-items: flex-start !important;
+    justify-content: center; 
+    flex-direction: column;
+    gap: 5px;
+}
+.school > * {
+    margin: 0;
+    margin-left: 20px;
+    font-weight: bold;
+}
+.school p{
+    color: gainsboro;
+}
+.jobs{
+    border-radius: 0 3px 3px 0;
+    display: flex !important;
+    flex-direction: column;
+    align-items: flex-start !important;
+    justify-content: center;
+    gap: 5px;
+}
+.jobs > *{
+    font-weight: bold;
+    margin: 0;
+    margin-left: 20px;
+}
+.jobs p{
+    color: gainsboro;
+}
+.bottom-div{
+    height: 300px;
+}
+.completed-projects{
+    width: 1040px !important;
+    height: 305px;
+    margin-top: -3px;
+}
+.completed-projects div{
+    width: 1030px;
+    background-color: rgb( 59, 56, 56);
+    border-radius: 2px;
+}
+.title{
+    height: 35px;
+    display: grid;
+    place-items: center;
+}
+.title h3{
+    margin: 0;
+    color: aliceblue;
+}
+.html-css{
+    height: 90px;
+    display: flex !important;
+}
+.html-css div{
+    height: 90%;
+}
+.html-css .images{
+    width: 250px;
+    margin-left: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.images img{
+    height: 50px;
+}
+.html-css .projects{
+    width: 600px;
+    display: flex;
+    margin-left: 15px;
+}
+.projects ul{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+}
+.projects li{
+    font-weight: bold;
+    color: gainsboro;
+}
+.java{
+    height: 160px;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+.java .img{
+    height: 127px;
+    width: 300px;
+    margin-left: 15px;
+}
+.java-icons{
+    height: 100px !important;
+}
+.java .java-projects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.java-projects ul{
+    width: 700px;
+    height: 127px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-weight: bold;
+    color: gainsboro;
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    main{
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        border: solid 1px red;
+        height: 1500px;
+        width: 400px;
+        position: relative !important;
+        overflow-x: hidden;
+
+    }
+    .left-section{
+        width: 400px !important;
+        margin: auto !important;
+        align-items: center;
+        margin-top: 200px !important;
+        border: solid 1px red;
+    }
+    .right-section{
+        width: 100% !important;
+        height: 500px;
+    }
+
+    .left-section .profile-div{
+        height: 30px;
+    }
+    
+    .right-section .top-div{
+        position: absolute;
+        top: -5px;
+        z-index: -1;
+    }
+
+    .jobs, .school{
+        height: 150px;
+        font-size: 12px;
+        transform: translateY(-240px);
+    }
+    .title{
+        width: 400px !important;
+        padding-bottom: 75px;
+        transform: translate(-320px, -220px);
+    }
+    .pls{
+        flex-direction: column !important;
+    }
+    .pls-icons, .pls-langs{
+        flex-direction: row;
+        gap: 40px;
+    }
+    .pls-icons{
+        gap: 90px;
+    }
+    .css{
+        transform: translateX(-20px);
+    }
+    .js{
+        transform: translateX(-30px);
+    }
+
+    .html-css{
+        flex-direction: column;
+        height: 200px;
+        width: 500px !important;
+        transform: translate(-290px, -280px);
+    }
+    .projects ul{
+        width: 400px !important;
+        border: solid 1px red;
+    }
+    .html-css .images{
+        transform: translate(-35px, 0px);
+        width: 450px;
+    }
+    .html-css .projects{
+        width: 300px;
+    }
+    .htmli, .cssi, .jsi{
+        height: 40px !important;
+    }
+}
